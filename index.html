@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,65 @@
 	<link rel="icon" href="img/pizarra.png">
 	<title>PIZARRA</title>
 </head>
+
 <body>
-	<header>
-		<h1>Bienvenido a mi primer proyecto con js</h1>
-		<p>Se trata de una <strong>pizarra</strong>, aquí estoy aplicando mis conocimientos sobre HTML, CSS, JavaScript.</p>
-	</header>
-	<main>
-		<section>
-			<figure class="a">
-				<img src="img/art.png" width="400" height="400">
-			</figure>
-			<figure class="b">
-				<img src="img/art2.png" width="400" height="400">
-			</figure>
-		</section>
-		<section class="parte_abajo">
-			
-					Escoge el color de tu preferencia:
+		
+	<div class="container">
+		<header class="encabezado">
+			<h1>Bienvenido a mi primer proyecto con js</h1>
+			<p>Se trata de una <strong>pizarra</strong>, aquí estoy aplicando mis conocimientos sobre HTML, CSS, JavaScript.
+			</p>
+		</header>
+		<main class="centro">
+		
+			<section class="tablero">
+				<!-- <figure class="imagen-arriba">
+					<img src="img/art.png" width="400" height="400">
+				</figure> -->
+				<canvas width="600" height="350" id="tabla"></canvas> <!--espacio de dibujo-->
+				<!-- <figure class="imagen-abajo">
+					<img src="img/art2.png" width="400" height="400">
+				</figure> -->
+			</section>
+	
+	
+			<section class="botones">
+				<div class="botones-items">
+					<p>Color: </p>
 					<input type="color" name="" id="color" value="#3DE0A5"> &emsp;
-					Limpiar (por si lo necesitas):
+				</div>
+				<div class="botones-items">
+					<p>Limpiar tablero: </p>
 					<button type="button" id="borrador"><img src="img/borrador.png" width="20" height="20"></button> &emsp;
-					Tamaño del pincel:
+				</div>
+				<div class="botones-items">
+					<p>Tamaño del pincel: </p>
 					<input type="range" name="" id="tam" min="1" max="10" value="5">
 					<span id="tamLvl">5px</span>
-
-		</section>
-		<section class="parte_der">
-			<br>
-			<canvas width="800" height="400" id="tabla"></canvas> <!--espacio de dibujo-->
-		</section>
-	</main>
-	<footer>
-		<p>Hecho por: <strong>Juana Solano</strong></p>
-		<a href="https://www.instagram.com/ssssshhv/"><img src="img/instagram.png" width="20" height="20">ssssshhv</a>
-		<br>
-		<a href="https://github.com/jsolano0112/"><img src="img/github.png" width="20" height="20">jsolano0112 </a>
+				</div>
+			</section>
+	
+		</main>
+	</div>
+	
+	<footer class="footer">
+		<h5>By Juana Solano</h5>
+		<ul class="menu-items">
+			<li>
+				<a href="https://www.linkedin.com/in/juana-solano-07686b1b0/">
+					<img src="img/link.png" width="25" height="25" title="Linkedin" alt="linkedin">
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/jsolano0112" title="GitHub">
+					<img src="img/github.png" width="25" height="25" alt="GitHub">
+				</a>
+			</li>
+		</ul>
 	</footer>
+
 	<script src="js/eventos.js"></script>
 
 </body>
+
 </html>
